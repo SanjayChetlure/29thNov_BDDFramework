@@ -35,4 +35,36 @@ public class LoginSteps
         System.out.println("Home page visible");
     }
 
+    @When("user enter wrong password")
+    public void user_enter_wrong_password() {
+        System.out.println("entered wrong password");
+    }
+
+    @Then("error msg should be visible")
+    public void error_msg_should_be_visible()
+    {
+        System.out.println("error msg visible");
+    }
+
+
+    @When("user enter username as {string}")
+    public void user_enter_username_as(String un)
+    {
+        System.out.println("username entered;"+un);
+    }
+
+    @When("user enter password as {string}")
+    public void user_enter_password_as(String pwd)
+    {
+        System.out.println("password entered-"+pwd);
+    }
+
+    @Then("home page should be visible with {string} logo text")
+    public void home_page_should_be_visible_with_logo_text(String expLogoText)
+    {
+        System.out.println("home page visible-"+expLogoText);
+    }
+
+
+
 }

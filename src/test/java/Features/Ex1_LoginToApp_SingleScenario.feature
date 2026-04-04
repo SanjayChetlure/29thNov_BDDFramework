@@ -1,7 +1,7 @@
 Feature: login to application feature
 
 
-  Scenario: login with valid data
+  Scenario: s1-login with valid data
     Given open browser
     When user enter username
     And user enter password
