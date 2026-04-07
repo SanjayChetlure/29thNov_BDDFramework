@@ -1,6 +1,6 @@
 Feature: login feature with Scenario outline
 
-  Scenario Outline: login to application
+  Scenario Outline: S7-login to application
     Given user in at signup page
     When user enters "<Name>" inside form
     And user enters age as <Age>
@@ -15,9 +15,3 @@ Feature: login feature with Scenario outline
 
 
 
-#  Scenario: login to application
-#    Given user in at signup page
-#    When user enters "mahesh" inside form
-#    And user enters age as 30
-#    And user confirm gender as "Male"
-#    Then user gets created
