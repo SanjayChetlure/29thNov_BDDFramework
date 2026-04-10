@@ -3,6 +3,7 @@ package Steps;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Given;
+import org.testng.Assert;
 
 public class OrderSteps
 {
@@ -51,6 +52,10 @@ public class OrderSteps
     public void user_should_see_canceled_order_info()
     {
         System.out.println("canceled orders visible");
-    }
 
+        String actResult="Hi";
+        String expResult="Hello";
+
+        Assert.assertEquals(actResult,expResult);       //className.methodName(actResult,expResult)
+    }
 }
