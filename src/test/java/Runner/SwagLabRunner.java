@@ -4,9 +4,9 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        features = "C:\\Users\\sanja\\IdeaProjects\\29thNov_BDDFramework\\src\\test\\java\\Features\\REx2_Product.feature",
+        features = "C:\\Users\\sanja\\IdeaProjects\\29thNov_BDDFramework\\src\\test\\java\\Features\\REx3_Product_E2E.feature",
         glue = {"Steps","Hooks"},
-        tags = "@Smoke",
+        tags = "",
         publish = true,
         plugin = {"pretty","html:Reports/cucumber-reports/SwagLabReport.html"}
 

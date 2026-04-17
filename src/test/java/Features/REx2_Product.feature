@@ -9,7 +9,7 @@ Feature: products feature
     And user click on login btn on swaglab login page
     And wait for 3 seconds
 
-    @Sanity
+  @Sanity
   Scenario: TC3-verify home page contains 6 products
     Then user can see 6 products on home page
 
@@ -17,6 +17,6 @@ Feature: products feature
   Scenario: TC4-verify price of specific product
     Then price of the SauceLabBackPack product should 29.99
 
-#
-#  Scenario: TC5-verify total price of all products
-#    Then total price of the products should 129.94
+  @functional
+  Scenario: TC5-verify total price of all products
+    Then total price of the products should 129.94
