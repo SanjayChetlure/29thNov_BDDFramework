@@ -53,5 +53,14 @@ public class SwagLabLoginSteps
     }
 
 
+    @Then("login button should be enabled")
+    public void login_button_should_be_enabled()
+    {
+
+        boolean actResult=login.getLoginButtonEnabled();
+        Assert.assertTrue(actResult,"act result is false");
+    }
+
+
 
 }

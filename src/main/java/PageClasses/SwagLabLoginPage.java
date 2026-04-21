@@ -42,4 +42,11 @@ public class SwagLabLoginPage
         return errorMsgText;
     }
 
+
+    public boolean getLoginButtonEnabled()
+    {
+        boolean result = loginBtn.isEnabled();
+        return result;
+    }
+
 }

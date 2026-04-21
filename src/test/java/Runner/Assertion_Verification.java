@@ -16,13 +16,27 @@ public class Assertion_Verification
     }
 
 
-    @Test
+//    @Test
     public void m2_assertNotEquals()
     {
         String actResult="hi";
         String expResult="hello";
 
         Assert.assertNotEquals(actResult,expResult,"Act & Exp results are Same");
+    }
+
+//    @Test
+    public void m3_assertTrue()
+    {
+        boolean actResult=true;
+        Assert.assertTrue(actResult,"Failed-act result is false");
+    }
+
+    @Test
+    public void m4_assertFalse()
+    {
+        boolean actResult=false;
+        Assert.assertFalse(actResult,"Failed-act result is true");
     }
 
 }
