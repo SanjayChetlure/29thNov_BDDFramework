@@ -9,7 +9,7 @@ Feature: products feature
     And user click on login btn on swaglab login page
     And wait for 3 seconds
 
-
+@ProductE2e
   Scenario: TC6- purchase product E2E
     When user click on backpack products add to cart btn
     And user click on cartlink
