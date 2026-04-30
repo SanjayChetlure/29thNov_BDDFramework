@@ -1,5 +1,6 @@
 package PageClasses;
 
+import LibraryFiles.UtilityClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,11 +14,17 @@ public class SwagLabLoginPage
     @FindBy(xpath = "//input[@name='password']") private WebElement PWD;       //private WebElement PWD=driver.findElement(By.xpath(""))
     @FindBy(xpath = "//input[@name='login-button']") private WebElement loginBtn; //private WebElement loginBtn=driver.findElement(By.xpath(""))
     @FindBy(xpath = "//h3[@data-test='error']") private WebElement errorMsg;
+    @FindBy(xpath = "//select[@id='1234']") private WebElement country;
+    @FindBy(xpath = "//select[@id='1234']") private WebElement year;
+    @FindBy(xpath = "//select[@id='1234']") private WebElement srcElement;
+    @FindBy(xpath = "//select[@id='1234']") private WebElement destElement;
+    public WebDriver driver;            //global variable
 
     //Step2: initialization
     public SwagLabLoginPage(WebDriver driver)
     {
         PageFactory.initElements(driver, this);          //className.methodName(webDriverObject, thisKeyword)
+        this.driver=driver;      //global=local  -> assign local variable info into global variable
     }
 
     //Step3: perform action
@@ -47,6 +54,23 @@ public class SwagLabLoginPage
     {
         boolean result = loginBtn.isEnabled();
         return result;
+    }
+
+
+    public void selectCountry(String countryName)
+    {
+        UtilityClass.selectOptionByText(country,countryName);
+    }
+
+    public void selectYear(String yearValue)
+    {
+        UtilityClass.selectOptionByText(year,yearValue);
+    }
+
+
+    public void dragAndDropElements()
+    {
+        UtilityClass.mouseAction_DragAndDrop(driver,srcElement,destElement);
     }
 
 }
