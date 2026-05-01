@@ -21,15 +21,16 @@ public class SwagLabLoginSteps
     }
 
     @When("user enter username on swaglab login page {string}")
-    public void user_enter_username_on_swaglab_login_page(String username)
+    public void user_enter_username_on_swaglab_login_page(String usernameKey) throws IOException
     {
-        login.enterUN(username);
+        String usernameValue = UtilityClass.getPFData(usernameKey);
+        login.enterUN(usernameValue);
     }
 
     @When("user enter password on swaglab login page {string}")
-    public void user_enter_password_on_swaglab_login_page(String password)
-    {
-        login.enterPWD(password);
+    public void user_enter_password_on_swaglab_login_page(String passwordKey) throws IOException {
+        String passwordValue = UtilityClass.getPFData(passwordKey);
+        login.enterPWD(passwordValue);
     }
 
     @When("user click on login btn on swaglab login page")

@@ -24,7 +24,7 @@ public class AppHooks {
     public void closeBrowser()
     {
         System.out.println("-close browser-");
-       // DriverFactory.driver.quit();           //diffClassName.variableNameOrObjectName
+        DriverFactory.driver.quit();           //diffClassName.variableNameOrObjectName
     }
 
 

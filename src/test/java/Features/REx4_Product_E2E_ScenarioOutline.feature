@@ -2,9 +2,9 @@ Feature: products feature
 
   Background:
     Given user is on Swag lab login
-    When user enter username on swaglab login page "standard_user"
+    When user enter username on swaglab login page "UN"
     And wait for 2 seconds
-    And user enter password on swaglab login page "secret_sauce"
+    And user enter password on swaglab login page "PWD"
     And wait for 3 seconds
     And user click on login btn on swaglab login page
     And wait for 3 seconds

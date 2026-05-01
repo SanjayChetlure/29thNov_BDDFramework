@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src\\test\\java\\Features",
         glue = {"Steps","Hooks"},
-        tags = "@ProductE2e",
+        tags = "@TC1_TC2",
         publish = true,
         plugin = {"pretty","html:Reports/cucumber-reports/SwagLabReport.html"}
 
