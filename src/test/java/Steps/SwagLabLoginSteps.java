@@ -9,10 +9,10 @@ import io.cucumber.java.en.When;
 import org.testng.Assert;
 import java.io.IOException;
 
-public class SwagLabLoginSteps
+public class SwagLabLoginSteps extends DriverFactory
 {
-    SwagLabLoginPage login=new SwagLabLoginPage(DriverFactory.driver);
-    SwagLabHomePage home=new SwagLabHomePage(DriverFactory.driver);
+    SwagLabLoginPage login=new SwagLabLoginPage(driver);
+    SwagLabHomePage home=new SwagLabHomePage(driver);
 
     @Given("user is on Swag lab login")
     public void user_is_on_swag_lab_login() throws IOException {

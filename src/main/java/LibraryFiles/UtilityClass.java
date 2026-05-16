@@ -79,5 +79,21 @@ public class UtilityClass
     }
 
 
+    public static void switchToFrame(WebDriver driver,WebElement ele)
+    {
+        driver.switchTo().frame(ele);
+    }
+
+    public static void switchToFrame(WebDriver driver,String idOrName)
+    {
+        driver.switchTo().frame(idOrName);
+    }
+
+    public static void switchToFrame(WebDriver driver,int frameIndex)
+    {
+        driver.switchTo().frame(frameIndex);
+    }
+
+
 
 }
